@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img class="logo" src="./asset/img/logo.png">
+        </div>
+        <!-- Tambahkan ikon menu disini -->
+        <span class="fa fa-bars menu-icon"></span>
+        <div class="header-right">
+          <p class="dark-light"><img src="./asset/img/sun.png"id="tombol"></p>
+          <a href="#" class="login">Log in</a>
+        </div>
+      </div>
+    </header>
+     <div class="top-wrapper">
+      <div class="container">
+        <h1>HELLO VISITORS</h1>
+        <h1>Welcome to My Site</h1>
+        <p>My journey starts here</p>
+        <p>For the sake of better life</p>
+        <div class="btn-wrapper">
+          <a href="#" class="btn signup">CONTACT ME</a>
+         <!--  <p>atau</p>
+         <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Daftar dengan Facebook</a>
+          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Daftar dengan Twitter</a>-->
+        </div>
+      </div>
+    </div>
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>What do you want to know about me?</h2>
+        </div>
+        <div class="lessons">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img class="baloon" src="./asset/img/baloon.png">
+               <p>Introduction</p>
+            </div>
+             <p class="text-contents">MY name is Rinto. I lived in Bekasi Jawa Barat</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img class="baloon" src="./asset/img/baloon.png">
+              <p>Education</p>
+            </div>
+            <p class="text-contents">i'm Undergraduated from Techincal Information</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img class="baloon" src="./asset/img/baloon.png">
+              <p>Recent Job</p>
+            </div>
+            <p class="text-contents">I'm unemployed and finding the jobs</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img class="baloon" src="./asset/img/baloon.png">
+              <p>Hobby</p>
+            </div>
+            <p class="text-contents">My hobby is playing football</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="contact-form">
+          <p>Email (wajib diisi)</p>
+          <input>
+          <p>Message (Wajib diisi)</p>
+          <textarea></textarea>
+          <p>* Bidang wajib diisi</p>
+        </div>
+        <span class="btn message">SEND</span>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <p>Thank you for visiting.</p>
+        <p>Subscribe My Channel Rinsam</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      var icon = document.getElementById("tombol");
+      icon.onclick = function(){
+          document.body.classList.toggle("dark-theme");
+          if( document.body.classList.contains("dark-theme")){
+              icon.src = "./asset/img/moon.png";
+          }else{
+              icon.src = "./asset/img/sun.png";
+          }
+      }
+  </script>
+  </body>
+</html>
